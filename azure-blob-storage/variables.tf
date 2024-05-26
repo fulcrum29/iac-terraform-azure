@@ -1,6 +1,6 @@
 variable "resource_group_name" {
   type    = string
-  default = "test-resource-group"
+  default = "dawgs-resource-group"
 }
 
 variable "resource_group_location" {
@@ -10,7 +10,7 @@ variable "resource_group_location" {
 
 variable "storage_account_name" {
   type    = string
-  default = "teststorageaccount"
+  default = "dogphotosstorageaccount"
 }
 
 variable "storage_account_tier" {
@@ -25,7 +25,7 @@ variable "storage_replication_type" {
 
 variable "storage_container_name" {
   type    = string
-  default = "test-storage-container"
+  default = "dawgs-storage-container"
 }
 
 variable "storage_container_access_type" {
@@ -35,7 +35,7 @@ variable "storage_container_access_type" {
 
 variable "storage_blob_name" {
   type    = string
-  default = "test-storage-blob"
+  default = "dog-photos-storage-blob"
 }
 
 variable "storage_blob_type" {
@@ -46,4 +46,9 @@ variable "storage_blob_type" {
 variable "storage_blob_size" {
   type    = number
   default = 1024
+}
+
+variable "storage_blob_source" {
+  type    = "string"
+  default = "dog.jpg"
 }

@@ -25,4 +25,5 @@ resource "azurerm_storage_blob" "storage_blob" {
   storage_container_name = azurerm_storage_container.storage_container.name
   type                   = var.storage_blob_type
   size                   = var.storage_blob_size
+  source                 = var.storage_blob_source
 }
