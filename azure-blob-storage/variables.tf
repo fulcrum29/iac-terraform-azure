@@ -49,6 +49,6 @@ variable "storage_blob_size" {
 }
 
 variable "storage_blob_source" {
-  type    = "string"
+  type    = string
   default = "dog.jpg"
 }
